@@ -1,4 +1,19 @@
 {
-  "name": "micro-services-comunication",
-  "packageManager": "yarn@4.1.1"
+  "name": "micro-services",
+  "version": "1.0.0",
+  "author": "Paulo Pereira",
+  "packageManager": "yarn@4.1.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "header": "yarn workspace micro-service-header",
+    "body": "yarn workspace micro-service-body",
+    "start": "yarn start --workspace=micro-service-header --workspace=micro-service-body"
+  },
+  "workspaces": [
+    "header",
+    "body"
+  ],
+  "keywords": [],
+  "license": "ISC"
 }
